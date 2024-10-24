@@ -20,6 +20,6 @@ git clone https://github.com/Sepidermn/android_hardware_xiaomi.git --depth 1 -b 
 # set build environment
 . build/envsetup.sh
 # lunch
-lunch mist_<mojito>-user
+lunch mist_mojito-userdebug
 # bacon
 make bacon
