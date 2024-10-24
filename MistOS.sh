@@ -14,7 +14,7 @@ git clone https://github.com/Sepidermn/android_device_xiaomi_sm6150-common.git -
 git clone https://github.com/Sepidermn/kernel_xiaomi_mojito.git --depth 1 -b inline-rom kernel/xiaomi/mojito
 # vendor tree
 git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_mojito.git --depth 1 -b 14 vendor/xiaomi/mojito
-git clonehttps://gitlab.com/Sepidermn/android_vendor_xiaomi_sm6150-common.git --depth 1 -b 14 vendor/xiaomi/sm6150-common
+git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_sm6150-common.git --depth 1 -b 14 vendor/xiaomi/sm6150-common
 # hardware tree
 git clone https://github.com/Sepidermn/android_hardware_xiaomi.git --depth 1 -b mojito hardware/xiaomi
 # set build environment
