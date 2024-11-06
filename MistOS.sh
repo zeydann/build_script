@@ -2,16 +2,8 @@
 
 # Remove the local manifests directory if it exists (cleanup before repo initialization)
 rm -rf .repo/local_manifests/
-# remove device
-rm -rf device/xiaomi/mojito
-rm -rf device/xiaomi/xiaomi/sm6150-common
-# remove kernel
-rm -rf kernel/xiaomi/mojito
-# remove hardware
-rm -rf hardware/xiaomi
-# remove vendor
-rm -rf vendor/xiaomi/mojito
-rm -rf vendor/xiaomi/sm6150-common
+#remove kernel
+rm -rf kernel/xiaomi
 # Initialize ROM manifest
 repo init -u https://github.com/Project-Mist-OS/manifest -b qpr3 --git-lfs
 # repo sync
