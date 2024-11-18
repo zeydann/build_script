@@ -11,7 +11,7 @@ rm -rf vendor/xiaomi/sm6150-common
 rm -rf hardware/xiaomi
 
 # Initialize ROM manifest
-repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
+repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 15 --git-lfs
 
 # Sync the repo with force to ensure a clean sync
 /opt/crave/resync.sh
@@ -34,7 +34,7 @@ git clone https://github.com/Sepidermn/android_hardware_xiaomi.git --depth 1 -b 
 . build/envsetup.sh
 
 # Choose the target device
-riseup mojito user
+lunch derp_mojito-user
 
 # Build the ROM (use mka bacon for a full build)
-rise b
+mka derp
