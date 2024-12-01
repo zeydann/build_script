@@ -31,7 +31,7 @@ git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_sm6150-common.git -
 git clone https://github.com/Sepidermn/android_hardware_xiaomi.git --depth 1 -b mojito hardware/xiaomi
 
 # add leica
-git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_mojito-leicacamera.git -b main vendor/xiaomi/mojito-leicacamera
+#git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_mojito-leicacamera.git -b main vendor/xiaomi/mojito-leicacamera
 
 # Set up th build environment
 . build/envsetup.sh
