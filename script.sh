@@ -16,6 +16,9 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # Sync the repo with force to ensure a clean sync
 /opt/crave/resync.sh
 
+# Remove frameworks/av
+rm -rf frameworks/av
+
 # cloning device tree
 git clone https://github.com/Sepidermn/android_device_xiaomi_mojito.git --depth 1 -b 15 device/xiaomi/mojito
 git clone https://github.com/Sepidermn/android_device_xiaomi_sm6150-common.git --depth 1 -b 15 device/xiaomi/sm6150-common
@@ -30,8 +33,8 @@ git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_sm6150-common.git -
 # cloning hardware tree
 git clone https://github.com/Sepidermn/android_hardware_xiaomi.git --depth 1 -b mojito hardware/xiaomi
 
-# add leica
-git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_mojito-leicacamera.git -b main vendor/xiaomi/mojito-leicacamera
+# add frameworks/av
+git clone https://github.com/Sepidermn/android_frameworks_av.git --depth 1 -b fifteen frameworks/av
 
 # Set up th build environment
 . build/envsetup.sh
