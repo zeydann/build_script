@@ -16,6 +16,9 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 # Sync the repo with force to ensure a clean sync
 /opt/crave/resync.sh
 
+# remove frameworks/native
+rm -rf frameworks/native
+
 # cloning device tree
 git clone https://github.com/Sepidermn/android_device_xiaomi_mojito.git --depth 1 -b 15 device/xiaomi/mojito
 git clone https://github.com/Sepidermn/android_device_xiaomi_sm6150-common.git --depth 1 -b ros device/xiaomi/sm6150-common
@@ -29,6 +32,9 @@ git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_sm6150-common.git -
 
 # cloning hardware tree
 git clone https://github.com/Sepidermn/android_hardware_xiaomi.git --depth 1 -b mojito hardware/xiaomi
+
+# add frameworks/native
+git clone https://github.com/rising-source-mod/android_frameworks_native.git --depth 1 -b fifteen frameworks/native
 
 # Set up th build environment
 . build/envsetup.sh
