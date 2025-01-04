@@ -18,7 +18,7 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 
 # cloning device tree
 git clone https://github.com/Sepidermn/android_device_xiaomi_mojito.git --depth 1 -b 15 device/xiaomi/mojito
-git clone https://github.com/Sepidermn/android_device_xiaomi_sm6150-common.git --depth 1 -b ros device/xiaomi/sm6150-common
+git clone https://github.com/Sepidermn/android_device_xiaomi_sm6150-common.git --depth 1 -b testing device/xiaomi/sm6150-common
 
 # cloning kernel tree
 git clone https://github.com/Sepidermn/android_kernel_xiaomi_mojito.git --depth 1 -b inline-rom kernel/xiaomi/mojito
