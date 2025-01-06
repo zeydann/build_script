@@ -21,7 +21,7 @@ git clone https://github.com/Sepidermn/android_device_xiaomi_mojito.git --depth 
 git clone https://github.com/Sepidermn/android_device_xiaomi_sm6150-common.git --depth 1 -b testing device/xiaomi/sm6150-common
 
 # cloning kernel tree
-git clone https://github.com/crdroidandroid/android_kernel_xiaomi_sm6150.git --depth 1 -b 15.0-mojito kernel/xiaomi/sm6150
+git clone https://github.com/Kou-Yeager/android_kernel_xiaomi_mojito.git --depth 1 -b 15.0-mojito kernel/xiaomi/mojito
 
 # cloning vendor tree
 git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_mojito.git --depth 1 -b 15 vendor/xiaomi/mojito
