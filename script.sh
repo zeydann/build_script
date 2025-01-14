@@ -17,7 +17,7 @@ repo init -u https://github.com/RisingTechOSS/android -b fifteen --git-lfs
 /opt/crave/resync.sh
 
 # cloning device tree
-git clone https://github.com/Sepidermn/android_device_xiaomi_mojito.git --depth 1 -b 15 device/xiaomi/mojito
+git clone https://github.com/Sepidermn/android_device_xiaomi_mojito.git --depth 1 -b testing device/xiaomi/mojito
 git clone https://github.com/Sepidermn/android_device_xiaomi_sm6150-common.git --depth 1 -b testing device/xiaomi/sm6150-common
 
 # cloning kernel tree
@@ -34,7 +34,7 @@ git clone https://github.com/Sepidermn/android_hardware_xiaomi.git --depth 1 -b 
 . build/envsetup.sh
 
 # Choose the target device
-riseup mojito userdebug
+riseup mojito eng
 
 # Build the ROM (use mka bacon for a full build)
 rise b
