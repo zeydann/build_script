@@ -34,7 +34,7 @@ git clone https://github.com/Sepidermn/android_hardware_xiaomi.git --depth 1 -b 
 . build/envsetup.sh
 
 # Choose the target device
-riseup mojito userdebug
+mistify mojito userdebug
 
 # Build the ROM (use mka bacon for a full build)
-rise b
+mist b
