@@ -11,17 +11,17 @@ rm -rf vendor/xiaomi/sm6150-common
 rm -rf hardware/xiaomi
 
 # Initialize ROM manifest
-repo init -u https://github.com/Project-Mist-OS/manifest -b 15 --git-lfs
+repo init -u https://github.com/RvOS-AOSP/manifest.git -b fifteen --git-lfs
 
 # Sync the repo with force to ensure a clean sync
 /opt/crave/resync.sh
 
 # cloning device tree
-git clone https://github.com/Sepidermn/android_device_xiaomi_mojito.git --depth 1 -b test device/xiaomi/mojito
-git clone https://github.com/Sepidermn/android_device_xiaomi_sm6150-common.git --depth 1 -b test device/xiaomi/sm6150-common
+git clone https://github.com/Sepidermn/android_device_xiaomi_mojito.git --depth 1 -b rvos device/xiaomi/mojito
+git clone https://github.com/Sepidermn/android_device_xiaomi_sm6150-common.git --depth 1 -b 15 device/xiaomi/sm6150-common
 
 # cloning kernel tree
-git clone https://github.com/ProjectEverest-Devices/android_kernel_xiaomi_mojito.git --depth 1 -b inline-rom kernel/xiaomi/mojito
+git clone https://github.com/Sepidermn/android_kernel_xiaomi_mojito.git --depth 1 -b inline-rom kernel/xiaomi/mojito
 
 # cloning vendor tree
 git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_mojito.git --depth 1 -b 15 vendor/xiaomi/mojito
@@ -34,7 +34,7 @@ git clone https://github.com/Sepidermn/android_hardware_xiaomi.git --depth 1 -b 
 . build/envsetup.sh
 
 # Choose the target device
-mistify mojito userdebug
+lunch rvos_mojito-ap4a-userdebug
 
 # Build the ROM (use mka bacon for a full build)
-mist b
+mka bacon
