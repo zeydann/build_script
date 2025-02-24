@@ -31,7 +31,7 @@ git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_mojito.git --depth 
 git clone https://gitlab.com/Sepidermn/android_vendor_xiaomi_sm6150-common.git --depth 1 -b 15 vendor/xiaomi/sm6150-common
 
 # cloning hardware tree
-git clone https://github.com/zeydann/android_hardware_xiaomi.gitt --depth 1 -b mojito hardware/xiaomi
+git clone https://github.com/zeydann/android_hardware_xiaomi.git --depth 1 -b mojito hardware/xiaomi
 
 # add modify
 git clone https://github.com/zeydann/frameworks_native.git --depth 1 -b vic frameworks/native
