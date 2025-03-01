@@ -40,6 +40,7 @@ git clone https://github.com/zeydann/android_frameworks_native.git --depth 1 -b 
 git clone https://github.com/ProjectMatrixx/android_vendor_lineage-priv_keys-template.git -b master vendor/lineage-priv/keys
 cd vendor/lineage-priv/keys
 ./generate.sh
+cd ../../../
 
 # Export
 export SELINUX_IGNORE_NEVERALLOWS=true
