@@ -36,11 +36,8 @@ git clone https://github.com/zeydann/android_hardware_xiaomi.git --depth 1 -b mo
 # add frameworks/native
 git clone https://github.com/zeydann/android_frameworks_native.git --depth 1 -b 15 frameworks/native
 
-# keys
-git clone https://github.com/ProjectMatrixx/android_vendor_lineage-priv_keys-template.git -b master vendor/lineage-priv/keys
-cd vendor/lineage-priv/keys
-./generate.sh
-cd ../../../
+# Keys
+crave ssh && git clone https://github.com/ProjectMatrixx/android_vendor_lineage-priv_keys-template.git vendor/lineage-priv/keys && cd vendor/lineage-priv/keys && ./generate.sh && exit
 
 # Export
 export SELINUX_IGNORE_NEVERALLOWS=true
