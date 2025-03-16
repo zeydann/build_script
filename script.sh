@@ -46,7 +46,7 @@ export SELINUX_IGNORE_NEVERALLOWS=true
 gk -s
 
 # Choose the target device
-axion mojito gms pico
+axion mojito va
 
 # full target
 brunch mojito userdebug
